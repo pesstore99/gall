@@ -11,7 +11,7 @@ html {
 
 }
 
-h1 {
+H1 {
     color: #000000 !important;
     font-size: 25px;
     animation: redGlow 1.8s ease-in-out infinite;
@@ -20,19 +20,20 @@ h1 {
 @keyframes redGlow {
     0%, 100% {
         text-shadow:
-            0 0 3px #ffffff,
-            0 0 7px #ffffff,
-            0 0 14px #ffffff,
-            0 0 25px rgba(255,255,255,0.8);
+            0 0 3px #ff0000,
+            0 0 7px #ff0000,
+            0 0 14px #ff0000,
+            0 0 25px rgba(255, 0, 0, 0.8);
     }
 
     50% {
         text-shadow:
-            0 0 1px #ffffff,
-            0 0 3px #ffffff,
-            0 0 6px rgba(255,255,255,0.4);
+            0 0 1px #ff0000,
+            0 0 3px #ff0000,
+            0 0 6px rgba(255, 0, 0, 0.4);
     }
 }
+
 
 a {
     text-decoration: none;
