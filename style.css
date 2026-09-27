@@ -9,7 +9,9 @@ html {
     text-align: center;
     overflow: hidden;
 }
-
+#msgs {
+    color: black !important;
+}
 h1 {
     text-shadow: 0.1em 0.1em 0.2em black;
     font-size: 25px;
