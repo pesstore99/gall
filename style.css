@@ -13,10 +13,11 @@ html {
     color: black !important;
 }
 h1 {
-    text-shadow: 0.1em 0.1em 0.2em black;
+    text-shadow: none !important;
     font-size: 25px;
-    color: white;
+    color: #000000 !important;
 }
+
 
 a {
     text-decoration: none;
