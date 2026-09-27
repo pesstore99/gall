@@ -14,10 +14,10 @@ html {
 h1 {
     color: #000000 !important;
     font-size: 25px;
-    animation: whiteGlow 1.8s ease-in-out infinite;
+    animation: redGlow 1.8s ease-in-out infinite;
 }
 
-@keyframes whiteGlow {
+@keyframes redGlow {
     0%, 100% {
         text-shadow:
             0 0 3px #ffffff,
