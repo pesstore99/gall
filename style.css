@@ -13,7 +13,7 @@ html {
 
 H1 {
     color: #000000 !important;
-    font-size: 25px;
+    font-size: 35px;
     animation: redGlow 1.8s ease-in-out infinite;
 }
 
