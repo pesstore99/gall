@@ -9,12 +9,29 @@ html {
     text-align: center;
     overflow: hidden;
 }
-
-h1 {
-    text-shadow: 0.1em 0.1em 0.2em black;
-    font-size: 25px;
-    color: white;
+H1 {
+    color: #ffffff !important;
+    font-size: 35px;
+    animation: cyberNeon 2s ease-in-out infinite;
 }
+
+@keyframes cyberNeon {
+    0%, 100% {
+        text-shadow:
+            0 0 5px #00f3ff,
+            0 0 10px #00f3ff,
+            0 0 20px #00a2ff,
+            0 0 40px #00a2ff;
+    }
+    50% {
+        text-shadow:
+            0 0 2px #80f9ff,
+            0 0 5px #00f3ff,
+            0 0 12px rgba(0, 162, 255, 0.6),
+            0 0 20px rgba(0, 162, 255, 0.3);
+    }
+}
+
 
 a {
     text-decoration: none;
