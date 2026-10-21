@@ -10,36 +10,56 @@ html {
     overflow: hidden;
 }
 H1 {
-    color: #ffffff !important;
+    color: #e0f2ff !important;
     font-size: 35px;
     position: relative;
-    animation: glitch 1.5s infinite;
+    letter-spacing: 1px;
+    -webkit-animation: neonPulse 2.4s ease-in-out infinite;
+    animation: neonPulse 2.4s ease-in-out infinite;
 }
 
-@keyframes glitch {
+/* Sub-headings like "Select Your Firmware" / "Main Payloads" */
+H1[style*="font-size: 18px"],
+H1[style*="font-size:18px"] {
+    color: #67e8f9 !important;
+    letter-spacing: 2px;
+}
+
+/* 3D depth (stacked dark-blue layers) + glow that fades in and out */
+@-webkit-keyframes neonPulse {
     0%, 100% {
-        text-shadow: -2px 0 #ff0055, 2px 0 #00ffff;
-        transform: translate(0);
+        text-shadow:
+            1px 1px 0 #1e3a8a, 2px 2px 0 #1e3a8a, 3px 3px 0 #172554, 4px 4px 0 #0b1530,
+            5px 6px 8px rgba(0, 0, 0, 0.8),
+            0 0 4px rgba(34, 211, 238, 0.35),
+            0 0 10px rgba(59, 130, 246, 0.25);
     }
-    20% {
-        text-shadow: -3px -1px #ff0055, 3px 1px #00ffff;
-        transform: translate(-2px, 2px);
-    }
-    40% {
-        text-shadow: 2px 2px #ff0055, -2px -2px #00ffff;
-        transform: translate(2px, -1px);
-    }
-    60% {
-        text-shadow: -1px 2px #ff0055, 1px -1px #00ffff;
-        transform: translate(0);
-    }
-    80% {
-        text-shadow: 3px -2px #ff0055, -3px 2px #00ffff;
-        transform: translate(-1px, 1px);
+    50% {
+        text-shadow:
+            1px 1px 0 #1e3a8a, 2px 2px 0 #1e3a8a, 3px 3px 0 #172554, 4px 4px 0 #0b1530,
+            5px 6px 8px rgba(0, 0, 0, 0.8),
+            0 0 8px rgba(34, 211, 238, 0.9),
+            0 0 18px rgba(59, 130, 246, 0.75),
+            0 0 32px rgba(139, 92, 246, 0.55);
     }
 }
-
-
+@keyframes neonPulse {
+    0%, 100% {
+        text-shadow:
+            1px 1px 0 #1e3a8a, 2px 2px 0 #1e3a8a, 3px 3px 0 #172554, 4px 4px 0 #0b1530,
+            5px 6px 8px rgba(0, 0, 0, 0.8),
+            0 0 4px rgba(34, 211, 238, 0.35),
+            0 0 10px rgba(59, 130, 246, 0.25);
+    }
+    50% {
+        text-shadow:
+            1px 1px 0 #1e3a8a, 2px 2px 0 #1e3a8a, 3px 3px 0 #172554, 4px 4px 0 #0b1530,
+            5px 6px 8px rgba(0, 0, 0, 0.8),
+            0 0 8px rgba(34, 211, 238, 0.9),
+            0 0 18px rgba(59, 130, 246, 0.75),
+            0 0 32px rgba(139, 92, 246, 0.55);
+    }
+}
 
 a {
     text-decoration: none;
