@@ -10,54 +10,65 @@ html {
     overflow: hidden;
 }
 H1 {
-    color: #e0f2ff !important;
+    color: #a5f3fc;
     font-size: 35px;
     position: relative;
     letter-spacing: 1px;
-    -webkit-animation: neonPulse 2.4s ease-in-out infinite;
-    animation: neonPulse 2.4s ease-in-out infinite;
+    -webkit-animation: neonPulse 2.2s ease-in-out infinite;
+    animation: neonPulse 2.2s ease-in-out infinite;
 }
 
 /* Sub-headings like "Select Your Firmware" / "Main Payloads" */
 H1[style*="font-size: 18px"],
 H1[style*="font-size:18px"] {
-    color: #67e8f9 !important;
+    color: #fde68a !important;
     letter-spacing: 2px;
+    -webkit-animation: none;
+    animation: none;
+    text-shadow: 1px 1px 0 #78350f, 2px 2px 0 #451a03, 0 0 10px rgba(251, 191, 36, 0.7);
 }
 
-/* 3D depth (stacked dark-blue layers) + glow that fades in and out */
+/* 3D depth + strong neon pulse (cyan -> pink/violet) */
 @-webkit-keyframes neonPulse {
     0%, 100% {
+        color: #a5f3fc;
         text-shadow:
-            1px 1px 0 #1e3a8a, 2px 2px 0 #1e3a8a, 3px 3px 0 #172554, 4px 4px 0 #0b1530,
-            5px 6px 8px rgba(0, 0, 0, 0.8),
-            0 0 4px rgba(34, 211, 238, 0.35),
-            0 0 10px rgba(59, 130, 246, 0.25);
+            1px 1px 0 #3b0764, 2px 2px 0 #2e1065, 3px 3px 0 #1e1b4b, 4px 4px 0 #0b1026,
+            5px 6px 8px rgba(0, 0, 0, 0.85),
+            0 0 4px rgba(34, 211, 238, 0.5),
+            0 0 10px rgba(34, 211, 238, 0.3);
     }
     50% {
+        color: #f5d0fe;
         text-shadow:
-            1px 1px 0 #1e3a8a, 2px 2px 0 #1e3a8a, 3px 3px 0 #172554, 4px 4px 0 #0b1530,
-            5px 6px 8px rgba(0, 0, 0, 0.8),
-            0 0 8px rgba(34, 211, 238, 0.9),
-            0 0 18px rgba(59, 130, 246, 0.75),
-            0 0 32px rgba(139, 92, 246, 0.55);
+            1px 1px 0 #3b0764, 2px 2px 0 #2e1065, 3px 3px 0 #1e1b4b, 4px 4px 0 #0b1026,
+            5px 6px 8px rgba(0, 0, 0, 0.85),
+            0 0 6px #ffffff,
+            0 0 14px #e879f9,
+            0 0 28px #d946ef,
+            0 0 46px #a855f7,
+            0 0 70px #6366f1;
     }
 }
 @keyframes neonPulse {
     0%, 100% {
+        color: #a5f3fc;
         text-shadow:
-            1px 1px 0 #1e3a8a, 2px 2px 0 #1e3a8a, 3px 3px 0 #172554, 4px 4px 0 #0b1530,
-            5px 6px 8px rgba(0, 0, 0, 0.8),
-            0 0 4px rgba(34, 211, 238, 0.35),
-            0 0 10px rgba(59, 130, 246, 0.25);
+            1px 1px 0 #3b0764, 2px 2px 0 #2e1065, 3px 3px 0 #1e1b4b, 4px 4px 0 #0b1026,
+            5px 6px 8px rgba(0, 0, 0, 0.85),
+            0 0 4px rgba(34, 211, 238, 0.5),
+            0 0 10px rgba(34, 211, 238, 0.3);
     }
     50% {
+        color: #f5d0fe;
         text-shadow:
-            1px 1px 0 #1e3a8a, 2px 2px 0 #1e3a8a, 3px 3px 0 #172554, 4px 4px 0 #0b1530,
-            5px 6px 8px rgba(0, 0, 0, 0.8),
-            0 0 8px rgba(34, 211, 238, 0.9),
-            0 0 18px rgba(59, 130, 246, 0.75),
-            0 0 32px rgba(139, 92, 246, 0.55);
+            1px 1px 0 #3b0764, 2px 2px 0 #2e1065, 3px 3px 0 #1e1b4b, 4px 4px 0 #0b1026,
+            5px 6px 8px rgba(0, 0, 0, 0.85),
+            0 0 6px #ffffff,
+            0 0 14px #e879f9,
+            0 0 28px #d946ef,
+            0 0 46px #a855f7,
+            0 0 70px #6366f1;
     }
 }
 
